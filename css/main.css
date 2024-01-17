@@ -1,0 +1,29 @@
+body{
+    overflow-x: hidden;
+    background-color: #212326;
+}
+a{
+    color: white !important;
+}
+.navbar{
+    background-color: transparent;
+}
+.scrolling-down .navbar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.scrolling-up .navbar {
+    background-color: rgba(128, 128, 128, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-container {
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
