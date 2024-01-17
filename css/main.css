@@ -27,3 +27,38 @@ a{
     max-width: 100%;
     height: auto;
   }
+
+
+#form-box input{
+  all: unset;
+  color: white;
+  width: 40%;
+  padding: 20px;
+  background-color:#161616;
+  border-radius: 10px;
+  border: none;
+}
+
+#form-box textarea{
+  all: unset;
+  width: 90%;
+  padding: 30px;
+  background-color:#161616;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  
+}
+#form-box button{
+  all: unset;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  color: white;
+  padding: 10px 80px;
+  font-size: 18px;    
+  transition-duration: 0.8s;
+  transition-property:color background-color;
+}
+#form-box button:Hover{
+  color: white;
+  background-color: rgba(128, 128, 128, 0.5);
+}
