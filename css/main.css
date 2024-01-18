@@ -60,3 +60,24 @@ a{
   color: white;
   background-color: rgba(128, 128, 128, 0.5);
 }
+
+
+
+.row{
+  animation-duration: .5s;
+  animation-name: move;
+  animation-timing-function: ease-in-out;
+  transition-property: opacity transform;
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(2rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateX(0rem);
+      opacity: 1;
+  }
+}
