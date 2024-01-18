@@ -15,18 +15,16 @@ a{
 
 .scrolling-up .navbar {
     background-color: rgba(128, 128, 128, 0.2);
+    /* background-color:black; */
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
   }
+.top-remove-bg-navabr .navbar{
+  background-color:transparent;
+  transition: background-color 0.5s ease-in-out;
+}
 
-  .image-container {
-    margin-bottom: 15px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+ 
 
 
 #form-box input{
