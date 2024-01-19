@@ -12,6 +12,113 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/4554d31e64.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var parentContainer = document.getElementById("parentContainer1");
+      var movingDiv = document.getElementById("movingDiv1");
+      var parentBefore = document.querySelector("#parentContainer1");
+      var parentBefore = document.querySelector("#parentContainers1");
+  
+      parentContainer.addEventListener("mousemove", function(event) {
+        moveDiv(event);
+      });
+  
+      function moveDiv(event) {
+        var rect = parentContainer.getBoundingClientRect();
+        var parentX = rect.left;
+        var parentY = rect.top;
+  
+        var x = event.clientX - parentX;
+        var y = event.clientY - parentY;
+  
+        // Ensure the div stays within the parent container
+        x = Math.max(0, Math.min(x, parentContainer.clientWidth - movingDiv.clientWidth));
+        y = Math.max(0, Math.min(y, parentContainer.clientHeight - movingDiv.clientHeight));
+  
+        movingDiv.style.left = x + "px";
+        movingDiv.style.top = y + "px";
+  
+        // Adjust the width of ::before based on the percentage of x-coordinate of movingDiv
+        var percentageWidth = ((x / parentContainer.clientWidth) * 100).toFixed(0);
+        parentBefore.style.width = percentageWidth + "%";
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+      var parentContainer = document.getElementById("parentContainer2");
+      var movingDiv = document.getElementById("movingDiv2");
+      var parentBefore = document.querySelector("#parentContainer2");
+      var parentBefore = document.querySelector("#parentContainers2");
+  
+      parentContainer.addEventListener("mousemove", function(event) {
+        moveDiv(event);
+      });
+  
+      function moveDiv(event) {
+        var rect = parentContainer.getBoundingClientRect();
+        var parentX = rect.left;
+        var parentY = rect.top;
+  
+        var x = event.clientX - parentX;
+        var y = event.clientY - parentY;
+  
+        // Ensure the div stays within the parent container
+        x = Math.max(0, Math.min(x, parentContainer.clientWidth - movingDiv.clientWidth));
+        y = Math.max(0, Math.min(y, parentContainer.clientHeight - movingDiv.clientHeight));
+  
+        movingDiv.style.left = x + "px";
+        movingDiv.style.top = y + "px";
+  
+        // Adjust the width of ::before based on the percentage of x-coordinate of movingDiv
+        var percentageWidth = ((x / parentContainer.clientWidth) * 100).toFixed(0);
+        parentBefore.style.width = percentageWidth + "%";
+      }
+    });
+  </script>
+  <style>
+    #parentContainer1,#parentContainer2 {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ccc;
+      background-image: url(../img/a2.jpg);
+      background-repeat: no-repeat;      
+      background-size: 100%;
+      overflow: hidden;
+      margin:100px auto;
+    }
+
+    #parentContainers1,#parentContainers2{
+      content: "";
+      position: absolute;
+      background-color: rgba(128, 100, 100, 0.1);
+      width: 100%; /* Initial width */
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1; /* Place it behind the movingDiv */
+      /* transition: width 0.2s;  */
+    }
+    #parentContainer2{
+        background-image: url(../img/a3.jpg);        
+    }
+    #parentContainers2{
+        background-color: rgba(8, 100, 100, 0.1);        
+    }
+
+
+    #movingDiv1,#movingDiv2 {
+      width: 1px;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      left: 100%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -24,38 +131,34 @@
             <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./editing.html">Editing Class</a> </li>
             <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#">Tour</a> </li>
             <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./print/PrintHome.html">Print</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#">Contact</a> </li>
+            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./contact.html">Contact</a> </li>
             <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#"><img src="../img/flag.png"
                         alt="" width="30px"></a> </li>
         </ul>
     </nav>
-    <div class="container-fuild">
-        <div class="row mt-5">
-            <div class="col-8 text-white text-center m-auto mt-5">
-                <h3 class="mt-5 fs-1">Contact</h3>
-            </div>
-            <div class="col-6 text-white  m-auto" id="form-box">
-                <form action="">
-                    <div class="d-flex justify-content-around mt-5 mb-4">
-                      <input type="text" placeholder="Full Name">
-                      <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="my-4 d-flex justify-content-around">
-                      <input type="text" placeholder="E-mail Address">
-                      <input type="text" placeholder="Phone"> 
-                    </div>
-                    <div class="my-4 d-flex justify-content-center ">
-                      <textarea name="" id="" cols="30" rows="10" placeholder="Content"></textarea>
-                    </div>
-                    <div class="my-4 d-flex justify-content-center">
-                      <button class=" rounded-5 m-3">Send</button>
-                    </div>
-                  </form>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-evenly ">
+                <div>
+                    <div id="parentContainer1">
+                        <div id="movingDiv1">
+                            <i class="fa-solid fa-arrow-left fs-5"></i>
+                        </div>
+                        <div id="parentContainers1"></div>
+                      </div>
+                </div>
+                <div>
+                    <div id="parentContainer2">
+                        <div id="movingDiv2">
+                            <i class="fa-solid fa-arrow-left fs-5"></i>
+                        </div>
+                        <div id="parentContainers2"></div>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
-   
-
 
     <div class="container-fuild text-white-50 " style="background-color: #212326;">
         <div class="row">
