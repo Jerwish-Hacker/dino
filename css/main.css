@@ -6,6 +6,10 @@ div{
   overflow: hidden;
 }
 
+.bg-color-change-navbar-mobile-view {
+  background-color:black !important;
+}
+
 a{
     color: white !important;
 }

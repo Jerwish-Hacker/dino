@@ -38,3 +38,13 @@ window.addEventListener('load',() => {
   loader.classList.add("hidden")
   pagecontent.classList.add("visible")
 })
+
+// navbar color change in moblie view  
+document.addEventListener('DOMContentLoaded', function () {
+  var navbar = document.getElementById('myNavbar');
+  var navbarToggler = document.querySelector('.navbar-toggler');
+
+  navbarToggler.addEventListener('click', function () {
+      navbar.classList.toggle('bg-color-change-navbar-mobile-view');
+  });
+});
