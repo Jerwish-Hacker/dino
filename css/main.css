@@ -1,7 +1,11 @@
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: #212326;
 }
+div{
+  overflow: hidden;
+}
+
 a{
     color: white !important;
 }
