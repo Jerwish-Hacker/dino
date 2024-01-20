@@ -32,11 +32,9 @@ window.addEventListener("scroll", function() {
 // loader
 
 const loader=document.querySelector('.loader-container')
-const pagecontent=document.querySelector('#page-content')
 
 window.addEventListener('load',() => {
   loader.classList.add("hidden")
-  pagecontent.classList.add("visible")
 })
 
 // navbar color change in moblie view  
