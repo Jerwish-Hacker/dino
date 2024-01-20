@@ -69,7 +69,15 @@ a{
   background-color: rgba(128, 128, 128, 0.5);
 }
 
-
+@media screen and (max-width: 576px) {
+  #form-box input{
+      width:90% ;
+      padding: 15px;
+  }
+  #form-box textarea{
+    padding: 15px;
+  }
+}
 
 .row{
   animation-duration: .5s;
