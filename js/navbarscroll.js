@@ -25,3 +25,16 @@ window.addEventListener("scroll", function() {
 
   lastScrollTop = scrollTop;
 });
+
+
+
+
+// loader
+
+const loader=document.querySelector('.loader-container')
+const pagecontent=document.querySelector('#page-content')
+
+window.addEventListener('load',() => {
+  loader.classList.add("hidden")
+  pagecontent.classList.add("visible")
+})
