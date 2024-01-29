@@ -1,0 +1,13 @@
+
+.cover-image-tour img{
+    height: 50vh;
+    /* background-color: aqua; */
+    transition-duration: .5s;
+    transition-property:transform;
+    transition-timing-function: ease-in-out;
+    /* width: 100%; */
+}
+.cover-image-tour img:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}
