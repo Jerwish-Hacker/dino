@@ -29,3 +29,14 @@
 .img-box:hover::before {
     opacity: 1; /* Make the overlay visible on hover */
 }
+
+#exampleModal{
+
+    /* width: 90vw; */
+}
+form input{
+    all: unset;
+    /* margin: auto;     */
+    width: 95%;
+    border-bottom: 2px solid gray;
+}
