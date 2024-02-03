@@ -15,24 +15,37 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <section  class="loader-container">
+     <!-- Loader -->
+     <section  class="loader-container">
         <div class="loader"></div>
     </section>
-    <nav class="navbar fixed-top navbar-expand-xxxl ">
-        <a href="../index.html" class="navbar-brand px-5 py-4"><i class="fa-brands fa-d-and-d fs-1"></i></a>
-        <ul class="nav justify-content-end">
-            <li class="nav-item px-3"> <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./about.html">About Shanafer</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./editing.html">Editing Class</a> </li>      
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#">Tour</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./print/PrintHome.html">Print</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./contact.html">Contact</a> </li>
-            <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#"><img src="../img/flag.png"
-                        alt="" width="30px"></a> </li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-lg " id="myNavbar">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand"><i class="fa-brands fa-d-and-d fs-1"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-3" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3"> <a class="nav-link active" aria-current="page"
+                            href="./gallery.html">Gallery</a> </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./about.html">About
+                            Shanafer</a> </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./editing.html">Editing
+                            Class</a> </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./tour.html">Tour</a> </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page"
+                            href="./print/PrintHome.html">Print</a> </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item px-3"> <a class="nav-link " aria-current="page" href="#"><img src="../img/flag.png"
+                                alt="" width="30px"></a> </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <div class="container-fuild">
         <div class="row">
             <div class="col-12">
@@ -62,12 +75,14 @@
             </div>
         </div>
     </div>
+
+
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-10 m-auto  fs-2 text-center text-white">
+        <div class="row mt-md-5 mt-3">
+            <div class="col-10 m-auto fs-2 text-center text-white">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
             </div>
-            <div class="col-10 m-auto  lead text-center text-white-50 mt-5">
+            <div class="col-10 m-auto  lead text-center text-white-50 mt-md-5 mt-3">
                 Pock Coak
             </div>
         </div>
@@ -75,8 +90,20 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="col-8 m-auto">
-                <div class="d-flex">
+            <div class="col-lg-8 col-12 m-auto">
+                <div class="d-md-none d-block">
+                    <img src="../img/pro.jpg" alt="" srcset="" width="100%">
+                </div>
+                <div class="d-md-none d-block text-white-50 my-3" style="text-align: justify;"">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto consequuntur
+                        laudantium necessitatibus tenetur autem provident nam saepe commodi voluptate architecto odio
+                        est, quas ab, minima delectus iure quo assumenda omnis libero eos sint error vero! Minus, sed?
+                        Possimus omnis voluptatum dolorum error qui quas ea veniam voluptatibus, ipsum, earum assumenda,
+                        autem laborum sit deserunt! Ipsa fugit quidem culpa ipsam aut earum illum beatae architecto,
+                        inventore reprehenderit! Numquam temporibus voluptatibus eius laborum consequatur veritatis
+                        quod</p>
+                </div>
+                <div class="d-md-flex d-none ">
                     <div style="width: 50%;">
                         <img src="../img/pro.jpg" alt="" srcset="" width="90%">
                     </div>
@@ -100,8 +127,8 @@
     </div>
 
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-8 m-auto text-white">
+        <div class="row mt-md-5 mt-3">
+            <div class="col-md-8 col-12 m-auto text-white">
                 <div class="d-flex justify-content-evenly text-center">
                     <div style="width: 200px; height: 100px;" class="border ">
                        <span class="fs-1 d-block">150</span>                          
@@ -122,12 +149,12 @@
     </div>
 
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-10 m-auto text-white-50 mt-3">
+        <div class="row mt-md-5 mt-3">
+            <div class="col-md-10 col-12 m-auto text-white-50 mt-3">
                 <h3 class="text-white">title</h3>
                 <p style="text-align: justify;" class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad nulla, voluptas, provident iure nisi tempore molestias ducimus maiores recusandae eum inventore beatae corrupti reprehenderit saepe cum doloremque quod omnis delectus natus est, ipsa placeat unde? A vitae magnam excepturi ducimus obcaecati eveniet rerum quibusdam tenetur odit, illum nulla fuga error facere est dolorum neque veniam dolore rem atque et deserunt. Voluptatum rem eius reprehenderit pariatur corporis ex aut perferendis sequi officiis animi, rerum explicabo dolore eligendi facere autem quam! Velit at aperiam corrupti. Aspernatur magnam fuga animi atque excepturi quidem nemo autem neque aut tenetur rerum, totam, dolores, est commodi sapiente! Libero expedita fugit labore natus distinctio commodi, laborum alias cumque unde impedit. Exercitationem nihil minima culpa! Veritatis odit incidunt omnis aspernatur magnam adipisci pariatur nemo vitae, necessitatibus, illum fugiat iure laudantium, fugit ratione fuga nisi culpa possimus eligendi? Velit quasi totam dolorem molestiae aliquam suscipit aspernatur, nemo dolorum sapiente necessitatibus, magnam ipsa fugiat laudantium est asperiores eveniet cum! Velit quis quaerat dolores quam ab aliquam quibusdam adipisci aut earum pariatur? Saepe quae iure eum aut iste corrupti tempora optio iusto blanditiis distinctio exercitationem temporibus illum mollitia itaque enim, doloremque at veritatis voluptatibus obcaecati nihil veniam dignissimos velit rerum magni! Quas culpa, animi consequuntur cumque veniam nam vitae facere, error obcaecati natus amet alias unde? Non maiores ea sit accusantium ratione ab molestias quisquam quae tempora, quos eveniet, atque fuga ut asperiores enim iure perspiciatis fugiat! Ipsam id minima neque quo consectetur iure, est voluptate, saepe, dicta accusantium corrupti amet cumque. Est laboriosam voluptas, et iure fuga blanditiis temporibus, unde sapiente, error dolor nesciunt voluptate fugit. Beatae eius magnam, dolor veritatis ex omnis voluptatibus nemo expedita at excepturi ullam quo impedit possimus iure aperiam corporis dolorem ipsum autem assumenda repudiandae cum quam neque numquam voluptates. Ab ullam expedita officia!</p>
             </div>
-            <div class="col-10 m-auto text-white-50 mt-3">
+            <div class="col-md-10 col-12 m-auto text-white-50 mt-3">
                 <h3 class="text-white">title</h3>
                 <p style="text-align: justify;" class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad nulla, voluptas, provident iure nisi tempore molestias ducimus maiores recusandae eum inventore beatae corrupti reprehenderit saepe cum doloremque quod omnis delectus natus est, ipsa placeat unde? A vitae magnam excepturi ducimus obcaecati eveniet rerum quibusdam tenetur odit, illum nulla fuga error facere est dolorum neque veniam dolore rem atque et deserunt. Voluptatum rem eius reprehenderit pariatur corporis ex aut perferendis sequi officiis animi, rerum explicabo dolore eligendi facere autem quam! Velit at aperiam corrupti. Aspernatur magnam fuga animi atque excepturi quidem nemo autem neque aut tenetur rerum, totam, dolores, est commodi sapiente! Libero expedita fugit labore natus distinctio commodi, laborum alias cumque unde impedit. Exercitationem nihil minima culpa! Veritatis odit incidunt omnis aspernatur magnam adipisci pariatur nemo vitae, necessitatibus, illum fugiat iure laudantium, fugit ratione fuga nisi culpa possimus eligendi? Velit quasi totam dolorem molestiae aliquam suscipit aspernatur, nemo dolorum sapiente necessitatibus, magnam ipsa fugiat laudantium est asperiores eveniet cum! Velit quis quaerat dolores quam ab aliquam quibusdam adipisci aut earum pariatur? Saepe quae iure eum aut iste corrupti tempora optio iusto blanditiis distinctio exercitationem temporibus illum mollitia itaque enim, doloremque at veritatis voluptatibus obcaecati nihil veniam dignissimos velit rerum magni! Quas culpa, animi consequuntur cumque veniam nam vitae facere, error obcaecati natus amet alias unde? Non maiores ea sit accusantium ratione ab molestias quisquam quae tempora, quos eveniet, atque fuga ut asperiores enim iure perspiciatis fugiat! Ipsam id minima neque quo consectetur iure, est voluptate, saepe, dicta accusantium corrupti amet cumque. Est laboriosam voluptas, et iure fuga blanditiis temporibus, unde sapiente, error dolor nesciunt voluptate fugit. Beatae eius magnam, dolor veritatis ex omnis voluptatibus nemo expedita at excepturi ullam quo impedit possimus iure aperiam corporis dolorem ipsum autem assumenda repudiandae cum quam neque numquam voluptates. Ab ullam expedita officia!</p>
             </div>
@@ -137,8 +164,8 @@
 
 
     <div class="container-fuild">
-        <div class="row mt-5">
-            <div class="col-8 m-auto">
+        <div class="row mt-md-5 mt-3">
+            <div class="col-md-8 col-12 m-auto">
                 <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -169,65 +196,61 @@
 
     <div class="container-fuild text-white-50 " style="background-color: #212326;">
         <div class="row">
-            <div class="col-11 d-flex justify-content-end m-4 align-self-center">
-                <span class="px-3 mt-1">Join the conversation</span>
-                <i class="fab fa-facebook px-3 fs-4" aria-hidden="true"></i>
-                <i class="fab fa-instagram px-3 fs-4" aria-hidden="true"></i>
-                <i class="fab fa-twitter px-3 fs-4" aria-hidden="true"></i>
-                <i class="fab fa-youtube px-3 fs-4" aria-hidden="true"></i>
-                <i class="fab fa-linkedin-in px-3 fs-4" aria-hidden="true"></i>
-
-            </div>
-            <hr>
+          <span class="px-lg-3 p-sm-2 d-sm-none d-block mt-xl-1 text-center mt-3">Join the conversation</span>
+          <div class="col-lg-11 col-12 d-flex  justify-content-sm-end justify-content-center m-xl-4 my-md-3 align-self-center">
+            <span class="px-lg-3 p-sm-2 d-sm-block d-none mt-xl-1">Join the conversation</span>
+            <i class="fab fa-facebook px-lg-3 p-sm-2 p-4 fs-4" aria-hidden="true"></i>
+            <i class="fab fa-instagram px-lg-3 p-sm-2 p-4 fs-4" aria-hidden="true"></i>
+            <i class="fab fa-twitter px-lg-3 p-sm-2 p-4 fs-4" aria-hidden="true"></i>
+            <i class="fab fa-youtube px-lg-3 p-sm-2 p-4 fs-4" aria-hidden="true"></i>
+            <i class="fab fa-linkedin-in px-lg-3 p-sm-2 p-4 fs-4" aria-hidden="true"></i>
+          </div>
+          <hr class="d-lg-block d-none">
         </div>
-        <div class="row fs-6 " style="font-size:15px !important;">
-            <div class="col-1">
-
-            </div>
-            <div class="col-2 ">
-                <h3 style="font-size: 20px !important;" class="mb-3">Details</h3>
-                <p>photo 350</p>
-                <p>Picture 411</p>
-                <p>Tour 350</p>
-                <p>World tour</p>
-                <p>Teams</p>
-                <p>Person</p>
-            </div>
-            <div class="col-2 ">
-                <h3 style="font-size: 20px !important;" class="mb-3">Locate Us</h3>
-                <p>Center</p>
-                <p>Stores</p>
-                <p>Owner's Manual</p>
-                <p>Contact Us</p>
-            </div>
-            <div class="col-2 ">
-                <h3 style="font-size: 20px !important;" class="mb-3">About Us</h3>
-                <p>Since 2000</p>
-            </div>
-            <div class="col-2 ">
-                <h3 style="font-size: 20px !important;" class="mb-3">Media</h3>
-                <p>News</p>
-            </div>
-
-
+    
+        <div class="row d-lg-flex d-none" style="font-size:15px !important;">
+          <div class="offset-md-1 col-md-2 col-3 ">
+            <h3 style="font-size: 20px !important;" class="mb-3">Details</h3>
+            <p>photo 350</p>
+            <p>Picture 411</p>
+            <p>Tour 350</p>
+            <p>World tour</p>
+            <p>Teams</p>
+            <p>Person</p>
+          </div>
+          <div class="col-lg-2 col-3">
+            <h3 style="font-size: 20px !important;" class="mb-3">Locate Us</h3>
+            <p>Center</p>
+            <p>Stores</p>
+            <p>Owner's Manual</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="col-lg-2 col-3">
+            <h3 style="font-size: 20px !important;" class="mb-3">About Us</h3>
+            <p>Since 2000</p>
+          </div>
+          <div class="col-lg-2 col-3">
+            <h3 style="font-size: 20px !important;" class="mb-3">Media</h3>
+            <p>News</p>
+          </div>
         </div>
+    
         <div class="row" style="font-size: 12px;">
-            <hr>
-            <div class="col-5 mx-5 mb-3">
-                © 2023. Dino Shanafer. | Images shown here may differ from the actual product
-            </div>
-            <div class="col-3">
-
-            </div>
-            <div class=" col-2 mx-5 mb-3 d-flex justify-content-evenly">
-                <span>Privacy</span>
-                <span>|</span>
-                <span>Terms &amp; Condition</span>
-                <span>|</span>
-                <span>Cookies</span>
-            </div>
+          <hr>
+          <div class="col-xxl-5  col-lg-8 col-12">
+            <p class="px-5">
+              © 2023. Dino Shanafer | Images have Copyright
+            </p>
+          </div>
+          <div class="col-xxl-3  offset-xxl-4 col-lg-4 col-12 mb-3 d-flex justify-content-evenly px-5">
+            <span>Privacy</span>
+            <span>|</span>
+            <span>Terms &amp; Condition</span>
+            <span>|</span>
+            <span>Cookies</span>
+          </div>
         </div>
-    </div>
+      </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
