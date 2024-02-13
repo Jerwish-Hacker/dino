@@ -30,9 +30,12 @@ function sendMail() {
             .catch((err) => console.log(err))        
         }
 
-        else{
-            console.log("Justin")
-            document.getElementById("errormessage").classList.remove("hidden");        
+        else{            
+            document.getElementById("errormessage").classList.remove("hidden");  
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });            
         }       
 
 
@@ -40,10 +43,11 @@ function sendMail() {
 
 document.addEventListener('DOMContentLoaded', function() {
     var inputs = document.querySelectorAll('input, textarea');  
-        
+            
     inputs.forEach(function(input) {
         input.addEventListener('click', function() {
             document.getElementById("errormessage").classList.add("hidden");        
         });
     });
+    
 });
