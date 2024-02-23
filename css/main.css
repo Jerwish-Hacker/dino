@@ -72,6 +72,8 @@ a{
   background-color: rgba(128, 128, 128, 0.5);
 }
 
+
+
 @media screen and (max-width: 576px) {
   #form-box input{
       width:90% ;
@@ -79,6 +81,9 @@ a{
   }
   #form-box textarea{
     padding: 15px;
+  }
+  .beforeafterimg{
+    width: 300px;
   }
 }
 
@@ -142,4 +147,15 @@ a{
 }
 #page-content{
   opacity: 1;
+}
+
+#bottom-top-icon{
+  transition: all;
+  animation:2s infinite alternate moving ;    
+}
+@keyframes moving {
+    to{
+      background-color:gray;
+      
+    }
 }
